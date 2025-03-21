@@ -1,0 +1,44 @@
+Tìm hiểu về Email Marketing: Định nghĩa - tính chất/ đặc điểm / loại, các cách tạo email marketing.
+
+
+
+
+
+1. Định Nghĩa Email Marketing
+Email Marketing là phương thức tiếp thị trực tuyến sử dụng email để truyền tải thông tin, quảng bá sản phẩm, dịch vụ đến khách hàng tiềm năng. Đây là công cụ giúp doanh nghiệp duy trì mối quan hệ với khách hàng, tăng doanh số và xây dựng thương hiệu một cách hiệu quả.
+
+2. Tính Chất & Đặc Điểm Của Email Marketing
+Chi phí thấp: Tiết kiệm hơn so với các hình thức tiếp thị khác.
+Tiếp cận nhanh chóng: Có thể gửi email đến hàng nghìn khách hàng chỉ trong vài giây.
+Cá nhân hóa nội dung: Dễ dàng tùy chỉnh nội dung theo sở thích và hành vi của khách hàng.
+Tỷ lệ phản hồi cao: Nếu nội dung hấp dẫn, khách hàng sẽ dễ dàng tương tác.
+Dễ dàng đo lường: Các công cụ hỗ trợ theo dõi tỷ lệ mở, nhấp chuột, chuyển đổi để tối ưu chiến dịch.
+3. Các Loại Hình Email Marketing
+Email quảng cáo: Giới thiệu sản phẩm, dịch vụ hoặc chương trình khuyến mãi.
+Email chăm sóc khách hàng: Chúc mừng sinh nhật, thư cảm ơn, nhắc nhở khách hàng.
+Email bản tin (Newsletter): Cập nhật thông tin hữu ích, xu hướng ngành, tin tức doanh nghiệp.
+Email giao dịch: Xác nhận đơn hàng, thông báo giao hàng, nhắc nhở bảo trì dịch vụ.
+4. Các Cách Tạo Email Marketing Hiệu Quả
+a) Xác Định Mục Tiêu
+Trước khi gửi email, cần xác định rõ mục tiêu:
+Tăng doanh số.
+Thu hút khách hàng mới.
+Chăm sóc khách hàng hiện tại.
+
+b) Xây Dựng Danh Sách Email Chất Lượng
+Thu thập email hợp pháp từ khách hàng tiềm năng.
+Không mua danh sách email để tránh bị đánh dấu spam.
+Khuyến khích khách hàng đăng ký nhận email qua website, ưu đãi đặc biệt.
+c) Thiết Kế Nội Dung Email Hấp Dẫn
+Tiêu đề ngắn gọn, thu hút để tăng tỷ lệ mở.
+Nội dung rõ ràng, có lời kêu gọi hành động (CTA).
+Sử dụng hình ảnh chuyên nghiệp, nhưng không quá nhiều để tránh bị chặn.
+d) Tối Ưu Hóa Gửi Email
+Gửi email vào thời điểm phù hợp (buổi sáng hoặc đầu tuần).
+Kiểm tra trước khi gửi để tránh lỗi hiển thị.
+Cá nhân hóa email bằng cách chèn tên khách hàng.
+e) Đo Lường & Điều Chỉnh
+Theo dõi tỷ lệ mở, nhấp chuột và chuyển đổi.
+Thử nghiệm A/B để tìm ra nội dung email hiệu quả nhất.
+Điều chỉnh chiến lược dựa trên phản hồi của khách hàng.
+
