@@ -50,8 +50,41 @@ namespace eTickets.Controllers
         //GET: Movies/Details/1
         [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
+
         {
             var movieDetail = await _service.GetMovieByIdAsync(id);
+
+            if (movieDetail == null)
+            {
+                return NotFound();
+            }
+            string baseUrl = "https://8504-112-109-95-126.ngrok-free.app";
+
+            // ✅ Tạo URL tuyệt đối cho trang chi tiết phim
+            string movieUrl = $"{baseUrl}{Url.Action("Details", "Movies", new { id = movieDetail.Id })}";
+
+            // ✅ Kiểm tra nếu ImageURL đã là URL tuyệt đối
+            string imageUrl = movieDetail.ImageURL;
+
+            // ✅ Kiểm tra nếu ảnh đang dùng HTTP thì thay thành HTTPS
+            if (imageUrl.StartsWith("http://"))
+            {
+                imageUrl = imageUrl.Replace("http://", "https://");
+            }
+            if (!string.IsNullOrEmpty(imageUrl) && !(imageUrl.StartsWith("http://") || imageUrl.StartsWith("https://")))
+            {
+                imageUrl = $"{baseUrl}{imageUrl}";
+            }
+
+            // ✅ Encode tên phim và mô tả để tránh lỗi HTML
+            string movieName = System.Net.WebUtility.HtmlEncode(movieDetail.Name);
+            string movieDescription = System.Net.WebUtility.HtmlEncode(movieDetail.Description);
+
+            ViewBag.MovieUrl = movieUrl;
+            ViewBag.ImageUrl = imageUrl;
+            ViewBag.MovieName = movieName;
+            ViewBag.MovieDescription = movieDescription;
+
             return View(movieDetail);
         }
 
