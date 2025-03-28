@@ -1,0 +1,75 @@
+1. Định nghĩa
+Giao thức giao tiếp giữa website và mạng xã hội là tập hợp các quy tắc, chuẩn kỹ thuật hoặc công cụ (thường là API - Application Programming Interface) được thiết kế để cho phép website của bạn trao đổi dữ liệu, nội dung hoặc tương tác với các nền tảng mạng xã hội như Facebook, Instagram, Twitter, v.v. Các giao thức này giúp tích hợp các tính năng mạng xã hội vào website, chẳng hạn như đăng nhập bằng tài khoản mạng xã hội, chia sẻ nội dung, lấy dữ liệu người dùng, hoặc hiển thị bài đăng từ mạng xã hội.
+
+Ví dụ: Khi bạn thấy nút "Chia sẻ lên Facebook" trên một bài viết hoặc khả năng đăng nhập vào website bằng tài khoản Instagram, đó là kết quả của việc sử dụng các giao thức giao tiếp này.
+2. Tính chất/Đặc điểm
+Các giao thức này có một số đặc điểm nổi bật:
+
+Tính tương tác: Cho phép website và mạng xã hội trao đổi thông tin hai chiều (ví dụ: gửi bài đăng từ website lên Facebook hoặc lấy danh sách bạn bè từ Instagram về website).
+Bảo mật: Sử dụng các phương thức xác thực (như OAuth) để đảm bảo an toàn thông tin người dùng.
+Tính linh hoạt: Hỗ trợ nhiều loại dữ liệu (văn bản, hình ảnh, video, thông tin người dùng) và có thể tùy chỉnh theo nhu cầu của website.
+Thời gian thực: Một số giao thức cho phép cập nhật dữ liệu ngay lập tức (real-time), như hiển thị bình luận từ mạng xã hội trên website.
+Phụ thuộc vào nền tảng: Mỗi mạng xã hội cung cấp giao thức riêng (ví dụ: Facebook Graph API, Instagram Basic Display API), nên tính chất có thể khác nhau tùy nền tảng.
+3. Các loại giao thức phổ biến
+Dưới đây là các loại giao thức chính thường được sử dụng để giao tiếp giữa website và mạng xã hội:
+a. API (Application Programming Interface)
+Định nghĩa: Là giao diện lập trình ứng dụng do mạng xã hội cung cấp để website truy cập dữ liệu hoặc thực hiện hành động.
+Ví dụ:
+Facebook Graph API: Dùng để lấy thông tin người dùng, đăng bài, hoặc tích hợp nút "Like/Share".
+Instagram Basic Display API: Lấy thông tin hồ sơ, hình ảnh, video từ tài khoản Instagram.
+Twitter API: Đăng tweet, lấy dòng thời gian (timeline), hoặc tìm kiếm hashtag.
+Đặc điểm: Dựa trên HTTP/HTTPS, sử dụng các phương thức như GET, POST để gửi/nhận dữ liệu dưới dạng JSON hoặc XML.
+b. OAuth
+Định nghĩa: Là giao thức xác thực cho phép người dùng cấp quyền truy cập dữ liệu của họ trên mạng xã hội mà không cần chia sẻ mật khẩu.
+Ví dụ: Đăng nhập vào website bằng tài khoản Facebook hoặc Instagram.
+Đặc điểm: An toàn, sử dụng token (mã thông báo) để xác thực, thường kết hợp với API.
+c. Webhooks
+Định nghĩa: Là cơ chế cho phép mạng xã hội gửi thông báo thời gian thực đến website khi có sự kiện xảy ra (như người dùng bình luận hoặc thích bài đăng).
+Ví dụ: Facebook Webhooks thông báo khi có tương tác mới trên trang Fanpage.
+Đặc điểm: Phù hợp cho ứng dụng cần cập nhật tức thì, hoạt động theo mô hình "đẩy" (push) dữ liệu.
+d. SDK (Software Development Kit)
+Định nghĩa: Bộ công cụ phát triển phần mềm do mạng xã hội cung cấp để tích hợp nhanh các tính năng vào website.
+Ví dụ: Facebook JavaScript SDK để thêm nút "Share" hoặc "Login".
+Đặc điểm: Dễ triển khai, thường đi kèm mã mẫu (code snippet).
+4. Các cách tạo hoặc triển khai
+Dưới đây là các bước cơ bản để triển khai giao thức giao tiếp giữa website và mạng xã hội:
+
+Cách 1: Sử dụng API của mạng xã hội
+Đăng ký ứng dụng:
+Truy cập cổng dành cho nhà phát triển của mạng xã hội (ví dụ: developers.facebook.com hoặc developers.instagram.com).
+Tạo một ứng dụng (app) và lấy App ID cùng App Secret.
+Cấu hình xác thực:
+Sử dụng OAuth để lấy Access Token (mã truy cập) từ người dùng.
+Gọi API:
+Dùng ngôn ngữ lập trình (như JavaScript, PHP, Python) để gửi yêu cầu HTTP đến API.
+Ví dụ: Gọi GET https://graph.facebook.com/me để lấy thông tin người dùng.
+Xử lý dữ liệu:
+Nhận dữ liệu trả về (thường là JSON) và hiển thị hoặc sử dụng trên website.
+Cách 2: Tích hợp SDK
+Thêm mã SDK:
+Chèn đoạn mã JavaScript của mạng xã hội vào website.
+Ví dụ với Facebook:
+html
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0&appId=YOUR_APP_ID"></script>
+Thêm nút hoặc tính năng:
+Chèn HTML để hiển thị nút "Like" hoặc "Share":
+html
+<div class="fb-share-button" data-href="URL_WEBSITE" data-layout="button"></div>
+Cách 3: Sử dụng Open Graph Protocol
+Thêm thẻ meta vào HTML:
+Trong phần <head> của website, thêm các thẻ Open Graph:
+html
+
+<meta property="og:title" content="Tiêu đề bài viết" />
+<meta property="og:image" content="URL_hình_ảnh" />
+<meta property="og:description" content="Mô tả ngắn" />
+<meta property="og:url" content="URL_website" />
+Kiểm tra:
+Dùng công cụ như Facebook Sharing Debugger để xem trước cách hiển thị.
+Cách 4: Thiết lập Webhooks
+Tạo endpoint trên server:
+Xây dựng một URL trên website của bạn để nhận dữ liệu từ mạng xã hội (ví dụ: https://yourwebsite.com/webhook).
+Đăng ký Webhook:
+Vào cổng nhà phát triển, cấu hình URL và chọn sự kiện cần nhận (như "bình luận mới").
+Xử lý dữ liệu:
+Server của bạn nhận dữ liệu POST từ mạng xã hội và xử lý theo logic mong muốn.
